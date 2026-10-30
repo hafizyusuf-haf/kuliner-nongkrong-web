@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Temukan kuliner lokal, coffee shop, dan tempat nongkrong pilihan di Purwokerto.">
+  <title>mampir. — Jelajah rasa & ruang Purwokerto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> DIREKTORI LOKAL PURWOKERTO <span class="announcement-right">Dibuat untuk yang suka jalan dan jajan ↗</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="mampir beranda"><span class="brand-mark">m.</span><span>mampir<span class="brand-dot">.</span></span></a>
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a href="#jelajah">Jelajahi</a><a href="#pilihan">Pilihan editor</a><a href="#tentang">Tentang</a>
+    </nav>
+    <a class="header-cta" href="#jelajah">Cari tempat <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> PURWOKERTO, JAWA TENGAH</div>
+        <h1>Tempat enak,<br><em>cerita seru.</em></h1>
+        <p>Temukan sudut-sudut terbaik untuk makan, ngopi, dan menghabiskan waktu di kota Satria.</p>
+        <a class="hero-link" href="#jelajah">Temukan tempat favoritmu <span>↓</span></a>
+        <div class="hero-note"><div class="avatar-stack"><i>🍜</i><i>☕</i><i>🍰</i></div><span>Ruang kecil untuk penjelajah rasa lokal.</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85" alt="Suasana hangat sebuah restoran">
+        <div class="floating-note"><span class="note-icon">✳</span><div><strong>Local gems</strong><small>Worth the little detour.</small></div></div>
+        <div class="hero-stamp">JALAN<br>JAJAN<br>ULANGI.</div>
+      </div>
+      <div class="hero-bottom"><span>01 / KURASI LOKAL</span><span>DISCOVER SOMETHING DELICIOUS</span><span>EST. 2026</span></div>
+    </section>
+
+    <section class="intro-strip" id="pilihan">
+      <div><span class="section-kicker">THE GOOD SPOTS</span><h2>Keluar sebentar,<br>nemu yang menarik.</h2></div>
+      <p>Dari sroto legendaris sampai coffee shop buat WFC. Pilih suasana, tentukan tujuan, lalu berangkat.</p>
+      <div class="strip-decoration">✳</div>
+    </section>
+
+    <section class="explore section-wrap" id="jelajah">
+      <div class="section-heading">
+        <div><span class="section-kicker">JELAJAHI DIREKTORI</span><h2>What's your <em>mood?</em></h2></div>
+        <span class="result-count" id="resultCount">10 TEMPAT</span>
+      </div>
+      <div class="toolbar">
+        <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari nama, menu, atau area..." aria-label="Cari tempat"><kbd>⌘ K</kbd></label>
+        <div class="filters" role="group" aria-label="Filter kategori">
+          <button class="filter-btn active" data-filter="Semua">Semua <span>10</span></button>
+          <button class="filter-btn" data-filter="Kuliner">Kuliner</button>
+          <button class="filter-btn" data-filter="Coffee shop">Coffee shop</button>
+          <button class="filter-btn" data-filter="Nongkrong">Nongkrong</button>
+        </div>
+        <select id="sortSelect" aria-label="Urutkan tempat"><option value="featured">Pilihan kami</option><option value="rating">Rating tertinggi</option><option value="az">Nama A–Z</option></select>
+      </div>
+      <div class="active-line"><span id="filterLabel">MENAMPILKAN SEMUA TEMPAT</span><button id="resetBtn">Reset filter ↺</button></div>
+      <div class="place-grid" id="placeGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>Belum ketemu tempatnya.</h3><p>Coba kata kunci atau kategori lain.</p></div>
+    </section>
+
+    <section class="editor-pick">
+      <div class="editor-image"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1100&q=85" alt="Interior coffee shop dengan suasana nyaman"><span class="image-tag">EDITOR'S NOTE · 01</span></div>
+      <div class="editor-copy"><span class="section-kicker">BUAT YANG SUKA LAMA-LAMA</span><h2>Ngopi dulu,<br><em>ide menyusul.</em></h2><p>Kalau rencananya mau buka laptop atau ngobrol sampai lupa waktu, mulai dari coffee shop yang punya ruang nyaman dan suasana pas.</p><a href="#jelajah" class="text-link" data-quick-filter="Coffee shop">Lihat coffee shop <span>↗</span></a><div class="editor-index">M / 001</div></div>
+    </section>
+
+    <section class="local-note" id="tentang">
+      <div class="note-left"><span class="section-kicker">CATATAN DARI KOTA SATRIA</span><h2>Local places.<br><em>Real stories.</em></h2></div>
+      <div class="note-right"><p><strong>mampir.</strong> adalah direktori eksplorasi kuliner dan tempat nongkrong di sekitar Purwokerto. Kami mengumpulkan referensi tempat supaya rencana jalan-jalanmu lebih gampang.</p><p class="small-note">Info alamat, jam buka, dan rating dapat berubah. Selalu cek ulang ke tempat terkait sebelum berkunjung. Punya rekomendasi atau ingin memperbarui data? Kirim masukan ke kami.</p><a class="contact-link" href="mailto:halo@mampir.local">Kirim rekomendasi <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">m.</span><span>mampir<span class="brand-dot">.</span></span></a><span>Jelajah rasa, temukan cerita. © 2026</span><a href="#top">KEMBALI KE ATAS ↑</a></footer>
+
+  <dialog id="detailDialog" class="detail-dialog"><button class="dialog-close" id="closeDialog" aria-label="Tutup">×</button><div id="dialogContent"></div></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
